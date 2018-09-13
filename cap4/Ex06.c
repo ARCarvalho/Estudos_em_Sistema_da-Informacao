@@ -15,17 +15,49 @@ int main() {
     getchar();
     scanf("%c", &sexo);
 
-    if((sexo == 'F') || (sexo == 'f')){
-        peso_ideal = (62.1 * altura) - 44.7;
-        printf("\nO peso ideal da mulher descrita eh %fKg\n", peso_ideal);
-    } else{
-        if ((sexo == 'M') || (sexo == 'm')){
+    switch(sexo){
+        case 'F':
+        case 'f':
+            peso_ideal = (62.1 * altura) - 44.7;
+            printf("\nO peso ideal da mulher descrita eh %fKg\n", peso_ideal);            
+            break;
+        case 'M':
+        case 'm':
             peso_ideal = (72.7 * altura) - 58;
             printf("\nO peso ideal do homem descrito eh %fKg\n", peso_ideal);
-        } else{
-            printf("\nVoce digitou uma letra errada para o sexo da pessoa.\n");
-        }
-    }
+            break;
+        default:
+            printf("\nVoce digitou uma letra errada para o sexo da pessoa.\n");        
+    }//end switch
 
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
