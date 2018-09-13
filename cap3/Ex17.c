@@ -4,7 +4,8 @@
 /* Escreva um programa que leia um numero inteiro e mostre o seu complemento bit a bit. */
 
 int main() {
-    unsigned int numero, complemento;
+    unsigned int numero;
+    unsigned int  complemento;
 
     printf("Digite um numero inteiro: ");
     scanf("%d", &numero);
