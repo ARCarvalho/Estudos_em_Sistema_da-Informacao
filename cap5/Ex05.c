@@ -4,17 +4,20 @@
 /* Faca um programa que calcule e mostre a soma dos 50 primeiros pares. */
 
 int main() {
-    int numero, soma_pares;
+    int numero     = 1;
+    int soma_pares = 0;
+    int contador   = 0;
 
-    numero = 1;
-    soma_pares = 0;
-    while(numero <= 100){
+    while(contador < 50){
+
         if(numero % 2 == 0){
-            soma_pares = soma_pares + numero;
-            numero++;
+            soma_pares += numero;
+            contador++;
         }
+
         numero++;
     }
+
     printf("A soma dos 50 primeiros numeros pares eh %d.", soma_pares);
     return 0;
 }
