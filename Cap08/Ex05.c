@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <math.h>
 
+/* Usando a estrutura Retangulo do exercicio anteior, faca um programa que declare e leia uma estrutura Retangulo e um POnto, e informe se esse ponto estah ou nao dentro do retangulo. */
+
 struct Ponto {
     int x;
     int y;

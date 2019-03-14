@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+/* Crie uma estrutura representandoum aluno de uma disciplina. Essa estrutura deve conter o numero de matricula do aluno, seu nome e as notas de tres provas. Agora, escreva um programa que leia os dados de cinco aluno e os armazena nessa estrutura. Em seguida, exiba o nome e as notas do aluno que possui a maior media geral dentre os cinco. */
+
 struct aluno {
     int matricula;
     char nome[50];
@@ -16,8 +18,8 @@ int main() {
 
     for (i = 0; i < 5 ; i++) {
         printf("Digite o nome do aluno: ");
+        scanf("%[^\n]s", aluno[i].nome);
         setbuf(stdin, NULL);
-        gets(aluno[i].nome);
 
         printf("Digite a matricula do aluno: ");
         scanf("%d", &aluno[i].matricula);
@@ -34,6 +36,7 @@ int main() {
         media[i] = (aluno[i].nota[0] + aluno[i].nota[1] + aluno[i].nota[2]) / 3;
 
         printf("\n");
+        setbuf(stdin, NULL);
     }
 
     menor_nota = 0;

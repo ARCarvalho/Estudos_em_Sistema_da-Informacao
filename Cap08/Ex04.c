@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <math.h>
 
+/* Crie uma estrutura chamada Retangulo. Essa estrutura devera conter o ponto superior esquerdo e o ponto inferior direito do retangulo. Casda ponto eh definido por uma estrutura Ponto, a qual contem as posicoes X e Y. Faca um programa que declare e leia uma estrutura Retangulo e exiba a area e o comprimento da diagonal e o perimetro desse retangulo. */
+
 struct Ponto {
     int x;
     int y;

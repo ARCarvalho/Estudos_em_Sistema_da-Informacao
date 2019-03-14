@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <math.h>
 
+/* Crie uma estrutura para representar as coordenadas de um ponto no plano (posicoes X e Y). Em seguida, declare e leia do teclado um ponto e exiba a distancia dele ate a origem das coordnadas, isto eh, a posicao (0,0). */
+
 struct coordenadas {
     int x;
     int y;

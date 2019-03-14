@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/* Crie uma estrutura representando uma hora. Essa estrutura deve conter os campos hora, minuto e segundo. Agora, escreva um programa que leia um vetor de cinco posicoes dessa estrutura e imprima a maior hora. */
+
 struct horario {
     int horas;
     int minutos;
@@ -45,6 +47,6 @@ int main() {
     }
 
 
-    printf("O maior horario digitado foi %dhoras, %dminutos e %dsegundos.", horario[aux].horas, horario[aux].minutos, horario[aux].segundos);
+    printf("O maior horario digitado foi %d horas, %d minutos e %d segundos.", horario[aux].horas, horario[aux].minutos, horario[aux].segundos);
     return 0;
 }

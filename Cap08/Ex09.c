@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+/* Crie uma estrutura representando um atleta. Essa estrutura deve conter o nome do atleta, seu esporte, idade e altura. Agora, escreva um programa que leia os dados de cinco atletas. Calcule e exiba os nomes do atleta mais alto e do mais velho. */
+
 struct atleta {
     char nome[50];
     char esporte[50];
@@ -16,12 +18,13 @@ int main() {
 
     for (i = 0; i < 5; i++) {
         printf("Digite o nome do atleta: ");
+        scanf("%[^\n]s", atl[i].nome);
         setbuf(stdin, NULL);
-        gets(atl[i].nome);
 
         printf("Digite o esporte que o atleta pratica: ");
+        scanf("%[^\n]s", atl[i].esporte);
         setbuf(stdin, NULL);
-        gets(atl[i].esporte);
+
 
         printf("Digite a idade do atleta: ");
         scanf("%d", &atl[i].idade);
@@ -32,6 +35,7 @@ int main() {
 
 
         printf("\n");
+        setbuf(stdin, NULL);
     }
 
     printf("\n\n");
@@ -53,6 +57,6 @@ int main() {
     }
 
 
-    printf("O atleta mais alto eh %s e o atleta mais velho eh %s.\n", atl[aux2].nome, atl[aux1].nome);
+    printf("O atleta mais alto eh %s com %lf metros de altura e o atleta mais velho eh %s com %d anos de idade.\n", atl[aux2].nome, atl[aux2].altura, atl[aux1].nome, atl[aux1].idade);
     return 0;
 }
